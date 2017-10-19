@@ -1,0 +1,62 @@
+/*APP STYLE*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*TIMES STYLE*/
+
+.times {
+  padding: 17.1px;
+  border-bottom: thin solid dodgerblue
+}
+
+/*BLOCK STYLE*/
+
+.block {
+  padding: 10px;
+  border-bottom: thin solid dodgerblue;
+}
+
+.filled {
+  border: thin solid dodgerblue;
+  padding: 6.5px;
+}
+
+/*NAVBAR STYLE*/
+
+.previous {
+    width: 80px;
+}
+
+.next {
+    width: 75px;
+}
+
+.leftSpace {
+  margin-left: 20px;
+}
