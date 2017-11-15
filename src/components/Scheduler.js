@@ -13,18 +13,18 @@ const Scheduler = ({ schedule, add }) => (
        <Col> <strong> -- <Times/> </strong> </Col>
        {schedule.map((fullDay) => (
            <Col>
-           {days[new Date(Object.keys(fullDay[0])).getDay()]}:
+             {days[new Date(Object.keys(fullDay[0])).getDay()]}:
 
-           {fullDay.map((tiempo) => (
-              <Block schedule={schedule} time={tiempo[Object.keys(fullDay[0])].time} addOnClick={(time, day, title, color, description) => add(time, day, title, color, description)}
-              fullDay={Object.keys(fullDay[0])} arrIndex={schedule.indexOf(fullDay)} arr2Index={fullDay.indexOf(tiempo)} title={tiempo.title} day={days[new Date(Object.keys(fullDay[0])).getDay()]}/>
-            ))}
+             {fullDay.map((tiempo) => (
+                <Block info={tiempo} day={days[new Date(Object.keys(fullDay[0])).getDay()]}
+                addOnClick={(time, day, title, color, description) => add(time, day, title, color, description)}
+                />
+              ))}
            </Col> ))}
-     </Row>
+    </Row>
   </Container>
 );
 
 
 
 export default Scheduler;
-//NEED TO PASS IN TITLE HERE HAS A PROP SO THAT COMPONENT WILL UPDATE IN BLOCK WILL UPDATE AS WELL

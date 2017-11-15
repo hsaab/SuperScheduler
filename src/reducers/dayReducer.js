@@ -62,6 +62,7 @@ const dayReducer = (state = initialState, action) => {
                   obj[dia].description = action.description;
                   obj[dia].color = action.color;
                   obj[dia].filled = true;
+                  console.log(newState2);
                   return newState2;
                 }
               })

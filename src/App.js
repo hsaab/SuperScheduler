@@ -16,14 +16,12 @@ let App = ({ next, last, schedule, add }) => {
     )
   }
 
-
 const mapStateToProps = state => {
   console.log(state);
   return {
     schedule: state.schedule
   }
 }
-
 
 const mapDispatchToProps = dispatch => {
   return {
