@@ -1,10 +1,9 @@
-import _ from 'underscore';
-import dateJs from 'datejs';
+import dateJs from "datejs";
 
 //DEFINE THE DATE VARIABLES
 var master = [];
 var period = 365*2;
-var timeIds = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM', '8PM', '9PM', '10PM', '11PM']
+var timeIds = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM', '8PM', '9PM', '10PM', '11PM'];
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function addSchedule () {
@@ -29,7 +28,7 @@ function addSchedule () {
 addSchedule();
 var firstSchedule = master.slice(0,7);
 
-const initialState = {schedule: firstSchedule, slice: [0,7]};
+const initialState = { schedule: firstSchedule, slice: [0,7] };
 
 const dayReducer = (state = initialState, action) => {
     switch(action.type) {

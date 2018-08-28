@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 
 const times = [];
 
@@ -17,7 +17,7 @@ function addTimes () {
 const Times = (/* props OR { prop1, prop2 } */) => (
   <div>
     {addTimes()}
-      {times.map((num) => (<Col className="times"> {num} </Col>) )}
+    {times.map((num) => (<Col className="times"> {num} </Col>) )}
   </div>
 );
 

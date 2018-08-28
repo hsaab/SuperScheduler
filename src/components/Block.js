@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Input, Label } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
 
 class Block extends React.Component {
   constructor(props) {
@@ -47,8 +47,7 @@ class Block extends React.Component {
   }
 
   render() {
-    const info = Object.values(this.props.info)[0]
-    const day = Object.keys(this.props.info)[0]
+    const info = Object.values(this.props.info)[0];
     return (
       <div className="block">
         {info.filled ? <Button color="red" onClick={this.toggle}>BOOKED</Button> : <Button color="dodgerblue" onClick={this.toggle}>BOOK</Button>}

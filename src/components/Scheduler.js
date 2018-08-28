@@ -1,5 +1,4 @@
 import React from 'react';
-import dateJs from 'datejs';
 import Times from './Times';
 import Block from './Block';
 import { Container, Row, Col } from 'reactstrap';
@@ -24,7 +23,5 @@ const Scheduler = ({ schedule, add }) => (
     </Row>
   </Container>
 );
-
-
 
 export default Scheduler;
